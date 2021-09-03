@@ -50,4 +50,4 @@ Run the below command to run this project with nodemon
 
 # 3. Test project <a id="test_project"></a>
 
-Import the ***"Student Registraion.postman_collection.json"*** file into your **Postman** tool to test the **RESTful APIs** of this project.
+Import the ***"Accucia.postman_collection.json"*** file into your **Postman** tool to test the **RESTful APIs** of this project.
