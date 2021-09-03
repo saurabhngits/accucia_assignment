@@ -1,0 +1,555 @@
+{
+	"info": {
+		"_postman_id": "2051a187-fa05-4936-8e03-7ef2a00e51e4",
+		"name": "Accucia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product Category Master",
+			"item": [
+				{
+					"name": "Create Product Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_name\": \"Clothes\",\r\n    \"status\": \"Pending\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/productCategory"
+					},
+					"response": [
+						{
+							"name": "Create Product Category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"category_name\": \"Clothes\",\r\n    \"status\": \"Pending\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/productCategory"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "214"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d6-8x9KPHpN1YtcUWhfATEhMbR/jJo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:23:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"category_name\": \"Clothes\",\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n    \"status\": \"Pending\",\n    \"createdAt\": \"2021-09-03T02:23:24.464Z\",\n    \"updatedAt\": \"2021-09-03T02:23:24.464Z\",\n    \"_id\": \"6131871c07f0983517685d65\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Read Product Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/productCategory"
+					},
+					"response": [
+						{
+							"name": "Read Product Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/productCategory"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "216"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d8-a21Obpby7v73pY21bff+B+LFWno\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:24:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6131871c07f0983517685d65\",\n        \"category_name\": \"Clothes\",\n        \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n        \"status\": \"Pending\",\n        \"createdAt\": \"2021-09-03T02:23:24.464Z\",\n        \"updatedAt\": \"2021-09-03T02:23:24.464Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Read Product Category with latest 3 products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/productCategory/latest"
+					},
+					"response": [
+						{
+							"name": "Read Product Category with latest 3 products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/productCategory/latest"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "903"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"387-AiSP9IVnvdk9am00fz/0+TvDPuA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:32:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6131871c07f0983517685d65\",\n        \"category_name\": \"Clothes\",\n        \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n        \"status\": \"Approved\",\n        \"createdAt\": \"2021-09-03T02:23:24.464Z\",\n        \"updatedAt\": \"2021-09-03T02:24:56.967Z\",\n        \"__v\": 0,\n        \"category_details\": [\n            {\n                \"_id\": \"6131891e07f0983517685d83\",\n                \"product_name\": \"Jackets\",\n                \"price\": 90000,\n                \"quantity\": 10,\n                \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n                \"createdAt\": \"2021-09-03T02:31:58.171Z\",\n                \"updatedAt\": \"2021-09-03T02:31:58.171Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"613188fb07f0983517685d80\",\n                \"product_name\": \"Dress\",\n                \"price\": 50000,\n                \"quantity\": 25,\n                \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n                \"createdAt\": \"2021-09-03T02:31:23.471Z\",\n                \"updatedAt\": \"2021-09-03T02:31:23.471Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"613188d507f0983517685d7d\",\n                \"product_name\": \"Saree\",\n                \"price\": 34000,\n                \"quantity\": 10,\n                \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n                \"createdAt\": \"2021-09-03T02:30:45.761Z\",\n                \"updatedAt\": \"2021-09-03T02:30:45.761Z\",\n                \"__v\": 0\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update Product Category By Id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Approved\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/productCategory/6131871c07f0983517685d65"
+					},
+					"response": [
+						{
+							"name": "Update Product Category By Id",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\": \"Approved\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/productCategory/6131871c07f0983517685d65"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "215"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d7-xsdIj9UE1mXqy3PVjZ361rNPKIE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:24:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6131871c07f0983517685d65\",\n    \"category_name\": \"Clothes\",\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n    \"status\": \"Approved\",\n    \"createdAt\": \"2021-09-03T02:23:24.464Z\",\n    \"updatedAt\": \"2021-09-03T02:24:56.967Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Product Category By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:8000/productCategory/6130f4891b5ae111b13fa385"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Details",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_name\": \"Jackets\",\r\n    \"price\": 90000,\r\n    \"quantity\": 10,\r\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/productDetails"
+					},
+					"response": [
+						{
+							"name": "Create Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_name\": \"Trousers\",\r\n    \"price\": 12000,\r\n    \"quantity\": 9,\r\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/productDetails"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"de-ZDQHgWHjjrrSVXirnb0NQFCOOic\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:27:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"product_name\": \"Trousers\",\n    \"price\": 12000,\n    \"quantity\": 9,\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n    \"createdAt\": \"2021-09-03T02:27:24.271Z\",\n    \"updatedAt\": \"2021-09-03T02:27:24.271Z\",\n    \"_id\": \"6131880c07f0983517685d71\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Create Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_name\": \"T-Shirts\",\r\n    \"price\": 10000,\r\n    \"quantity\": 12,\r\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/productDetails"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"df-ivfgEVC4Ve3W+F49kreVWUuiaGc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:28:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"product_name\": \"T-Shirts\",\n    \"price\": 10000,\n    \"quantity\": 12,\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n    \"createdAt\": \"2021-09-03T02:28:38.481Z\",\n    \"updatedAt\": \"2021-09-03T02:28:38.481Z\",\n    \"_id\": \"6131885607f0983517685d77\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Create Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_name\": \"Jeans\",\r\n    \"price\": 15000,\r\n    \"quantity\": 10,\r\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/productDetails"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "220"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dc-K6XHYOqcV/If57HiQNixxaXJPC0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:30:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"product_name\": \"Jeans\",\n    \"price\": 15000,\n    \"quantity\": 10,\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n    \"createdAt\": \"2021-09-03T02:30:13.717Z\",\n    \"updatedAt\": \"2021-09-03T02:30:13.717Z\",\n    \"_id\": \"613188b507f0983517685d7a\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Create Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_name\": \"Saree\",\r\n    \"price\": 34000,\r\n    \"quantity\": 10,\r\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/productDetails"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "220"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dc-dPDDKMutQrDsPTEmUITj/TsToT4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:30:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"product_name\": \"Saree\",\n    \"price\": 34000,\n    \"quantity\": 10,\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n    \"createdAt\": \"2021-09-03T02:30:45.761Z\",\n    \"updatedAt\": \"2021-09-03T02:30:45.761Z\",\n    \"_id\": \"613188d507f0983517685d7d\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Create Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_name\": \"Jackets\",\r\n    \"price\": 90000,\r\n    \"quantity\": 10,\r\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://127.0.0.1:8000/productDetails"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "222"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"de-Pzh1ikjl1s3KrZ0QejowZLMnBVI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Sep 2021 02:31:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"product_name\": \"Jackets\",\n    \"price\": 90000,\n    \"quantity\": 10,\n    \"category_id\": \"36c6d172d78b9c4fd595045cad91bad6\",\n    \"createdAt\": \"2021-09-03T02:31:58.171Z\",\n    \"updatedAt\": \"2021-09-03T02:31:58.171Z\",\n    \"_id\": \"6131891e07f0983517685d83\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
